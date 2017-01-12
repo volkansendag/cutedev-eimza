@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="main container">
+        <form id="imzala">
+            <div class="form-group">
+                <label for="file1">İmzalanacak Dosya</label>
+                <input name="file" type="file" class="form-control" id="file1" placeholder="imzalanacak dosya seçiniz.">
+            </div>
+            <div class="form-group">
+                <label for="pin">E-imza Parolası</label>
+                <input id="pin" value="" type="password" class="form-control" placeholder="Parola">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary imzala glyphicon glyphicon-certificate">
+                    <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>İmzala
+                </button>
+            </div>
+            <div class="form-group">
+                <div id="response"></div>
+            </div>
+        </form>
+        <form id="install-info">
+            <div class="form-group">
+                <div>Chrome eklentisini indirmek için <a href='https://chrome.google.com/webstore/detail/cutedev-e-i̇mza/ehjffgchplohbcbeakpncbgconplfjpg/' target='_blank'>tıklayınız.</a></div>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+    <script src="assets/plugins/file2Base64.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+﻿
+.container {
+    margin-top: 15px;
+}
+
+#imzala, #install-info {
+    display: none;
+}
