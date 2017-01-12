@@ -1,3 +1,5 @@
+# HTML5 E-İmza Uygulaması
+
 Bu repository chrome uzantısı olarak hazırlanmış olan elektronik imza uygulamasının kullanımı ile ilgili web arayüzü aracını içerir. 
 
 ## Chrome Extension
@@ -10,7 +12,4 @@ Elektronik imzalama işlemlerini chrome üzerinde yapabilmek için applet uygula
 
 <iframe style="width: 300px; height: 300px"  src="https://jsfiddle.net/naklov67/wh5omkja/"></iframe>
 
-[Örnek Uygulama](//jsfiddle.net/naklov67/wh5omkja/) üzerinden denemeler yapabilirsiniz.
-
-
-http://jsfiddle.net/naklov67/wh5omkja/
+[http://jsfiddle.net/naklov67/wh5omkja/](//jsfiddle.net/naklov67/wh5omkja/) üzerinden denemeler yapabilirsiniz.
