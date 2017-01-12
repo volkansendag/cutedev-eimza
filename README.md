@@ -1,6 +1,6 @@
 # HTML5 E-İmza Uygulaması
 
-Bu repository chrome uzantısı olarak hazırlanmış olan elektronik imza uygulamasının kullanımı ile ilgili web arayüzü aracını içerir. 
+Bu repository, Chrome uzantısı olarak hazırlanmış olan [CuteDev E-imza](https://chrome.google.com/webstore/detail/cutedev-e-imza/ehjffgchplohbcbeakpncbgconplfjpg) uygulamasının örnek web arayüzünü içerir. 
 
 ## Chrome Extension
 
@@ -10,7 +10,7 @@ Elektronik imzalama işlemlerini chrome üzerinde yapabilmek için applet uygula
 
 ## Örnek Uygulama
 
-<iframe style="width: 300px; height: 300px"  src="https://jsfiddle.net/naklov67/wh5omkja/"></iframe>
+<iframe style="width: 300px; height: 300px" src="https://jsfiddle.net/naklov67/wh5omkja/"></iframe>
 
 [http://jsfiddle.net/naklov67/wh5omkja/](//jsfiddle.net/naklov67/wh5omkja/) üzerinden denemeler yapabilirsiniz.
 
