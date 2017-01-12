@@ -44,4 +44,4 @@ Uygulamanın örnek kullanımı aşağıdaki şekildedir.
                     
 ##License
 
-[MIT License](http://opensource.org/licenses/MIT) © Volkan Şendağ
+[MIT License](http://opensource.org/licenses/MIT) © volkansendag
