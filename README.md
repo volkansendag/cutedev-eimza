@@ -8,7 +8,7 @@ Elektronik imzalama işlemlerini chrome üzerinde yapabilmek için applet uygula
 
 ## Örnek Uygulama
 
-<iframe style="width: 100%; height: 300px"  src="https://jsfiddle.net/naklov67/wh5omkja/"></iframe>
+<iframe style="width: 300px; height: 300px"  src="https://jsfiddle.net/naklov67/wh5omkja/"></iframe>
 
 ### ([Örnek Uygulama](//jsfiddle.net/naklov67/wh5omkja/)) üzerinden denemeler yapabilirsiniz.
 
