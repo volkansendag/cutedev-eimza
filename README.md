@@ -10,8 +10,6 @@ Elektronik imzalama işlemlerini chrome üzerinde yapabilmek için applet uygula
 
 ## Örnek Uygulama
 
-<iframe style="width: 300px; height: 300px" src="https://jsfiddle.net/naklov67/wh5omkja/"></iframe>
-
 [http://jsfiddle.net/naklov67/wh5omkja/](//jsfiddle.net/naklov67/wh5omkja/) üzerinden denemeler yapabilirsiniz.
 
 
@@ -20,27 +18,39 @@ Elektronik imzalama işlemlerini chrome üzerinde yapabilmek için applet uygula
 
 Uygulamanın örnek kullanımı aşağıdaki şekildedir.
 
-    window.addEventListener("message", function (e) {
-            if (e.data && e.data.type && e.data.type == "FROM_APP") {
-                var response = e.data.response;
-                if (response.Error) {
-                    // todo
-                } else if (response.Value) {
-                    console.log(response.Value);
-                    saveAs(url);
-                }
-            }
-        }, false);
+	cute.eimza.imzala({
+			base64File: base64,
+			pin: $pin.val(),
+			tip: 0, // 0:BES, 1:EST, 2:XLONG
+			ayar: {
+				ZDServerUrl: "http://zd.kamusm.gov.tr",
+				ZDMusteriNo: "",
+				ZDMusteriParola: "",
+				UploadUrl: "",
+			}
+		},
+		function (response) {
+			if (response.Error)
+				$("#response").html(response.Message);
+			else {
+				var val = response.Value;
+				if (val.PostResult) {
+					$("#response").html(val.PostResult)
+				} else if (response.Value.signedBase64File) {
+					var url = 'data:' + $input.data("type") + ';base64,' + response.Value.signedBase64File;
+					cute.saveAs(url, $input.data("name") + ".p7s");
+					$("#response").html("Dosya imzalandı.")
+				} else {
+					$("#response").html("Sonuç hatalı.")
+				}
+			}
+			console.log("success", response);
+		},
+		function (e) {
+			console.log("error", e);
+			$("#response").html("İmzalama başarısız. Ex:" + e.message);
+		});
 
-    window.postMessage({
-                        type: "FROM_PAGE",
-                        methodName: "imzala",
-                        callbackId: "78465416549879",
-                        Data: {
-                            base64File: base64,
-                            pin: $pin.val(),
-                        }
-                    }, "*");
                     
 ##License
 
